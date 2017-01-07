@@ -73,6 +73,6 @@ Requires:
 
 # For devices where test_gps eventually gets a fix:
 #- geoclue-provider-hybris
-
+- droid-hal-hltetmo-detritus
 Summary: Jolla HW Adaptation hltetmo
 
