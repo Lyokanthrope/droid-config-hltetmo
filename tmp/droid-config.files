@@ -58,3 +58,5 @@
 /lib/systemd/system/graphical.target.wants/droid-hal-init.service
 /lib/systemd/system/graphical.target.wants/droid-late-start.service
 /var/lib/environment/compositor/droid-hal-device.conf
+/lib/systemd/system/wifi-module-load.service
+/lib/systemd/system/basic.target.wants/wifi-module-load.service.txt

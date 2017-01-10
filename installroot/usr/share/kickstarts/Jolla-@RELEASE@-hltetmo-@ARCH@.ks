@@ -3,16 +3,18 @@
 # SuggestedImageType: fs
 # SuggestedArchitecture: armv7hl
 
-lang en_US.UTF-8
 timezone --utc UTC
-keyboard us
 user --name nemo --groups audio,video --password nemo
+keyboard us
+lang en_US.UTF-8
 
 ### Commands from /tmp/sandbox/usr/share/ssu/kickstart/part/default
 part / --size 500 --ondisk sda --fstype=ext4
 
 ## No suitable configuration found in /tmp/sandbox/usr/share/ssu/kickstart/bootloader
 
+repo --name=adaptation-community-hltetmo-@RELEASE@ --baseurl=http://repo.merproject.org/obs/nemo:/devel:/hw:/samsung:/hltetmo/sailfish_latest_@ARCH@/
+repo --name=adaptation-community-common-hltetmo-@RELEASE@ --baseurl=http://repo.merproject.org/obs/nemo:/devel:/hw:/common/sailfish_latest_@ARCH@/
 repo --name=adaptation0-hltetmo-@RELEASE@ --baseurl=https://store-repository.jolla.com/releases/@RELEASE@/jolla-hw/adaptation-samsung-hltetmo/@ARCH@/
 repo --name=apps-@RELEASE@ --baseurl=https://releases.jolla.com/jolla-apps/@RELEASE@/@ARCH@/
 repo --name=hotfixes-@RELEASE@ --baseurl=https://releases.jolla.com/releases/@RELEASE@/hotfixes/@ARCH@/
